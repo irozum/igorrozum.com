@@ -1,0 +1,573 @@
+#banner {
+  background: #F0F0F0;
+  height: 100vh;
+  min-height: 700px;
+  margin: 0 -10vw 0 -10vw;
+}
+
+#banner #banner-div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  width: 80vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  height: 100%;
+}
+
+#banner #banner-div div {
+  margin-top: -30%;
+}
+
+#banner #banner-div div h1 {
+  font-family: 'Airbnb Cereal App Bold';
+  font-size: 2.5rem;
+}
+
+#banner #banner-div div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+}
+
+#banner #banner-div div div #apple-link {
+  cursor: not-allowed;
+}
+
+#banner #banner-div div div a {
+  background-color: black;
+  padding: 0.7rem 2rem;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 8px black;
+          box-shadow: 0 0 8px black;
+  border: 1px solid black;
+  width: 8rem;
+  margin-right: 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+#banner #banner-div div div a i {
+  font-size: 1.5rem;
+}
+
+#banner #banner-div div div #android-link:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-box-shadow: 0 0 0px black;
+          box-shadow: 0 0 0px black;
+}
+
+#banner #banner-div div div #android-link:active {
+  -webkit-box-shadow: 0 0 15px black;
+          box-shadow: 0 0 15px black;
+}
+
+section.app-description {
+  height: 600px;
+  width: 50vw;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.app-description p {
+  margin: auto;
+}
+
+div.proj-image {
+  height: 700px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4fr 6fr;
+      grid-template-columns: 4fr 6fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.proj-image div {
+  margin-left: 2rem;
+}
+
+div.proj-image.right {
+  height: 85vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 6fr 4fr;
+      grid-template-columns: 6fr 4fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.proj-image.right div {
+  margin-right: 2rem;
+  text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+  #banner {
+    margin: 0 -5vw 0 -5vw;
+    height: auto;
+  }
+  #banner #banner-div {
+    display: block;
+    padding-top: 3rem;
+  }
+  #banner #banner-div div {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  #banner #banner-div div div {
+    padding-bottom: 7rem;
+  }
+  #banner #banner-div div div a {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+  }
+  #banner #banner-div div div a i {
+    font-size: 2rem;
+  }
+  #banner #banner-div div div a span {
+    display: none;
+  }
+  section.app-description {
+    width: 100%;
+    height: auto;
+    padding: 6rem 0;
+    font-size: 1.3rem;
+  }
+  div.proj-image {
+    height: auto;
+    display: block;
+    text-align: center;
+    margin-bottom: 7rem;
+  }
+  div.proj-image div {
+    margin: 1rem 0 0 0;
+  }
+  div.proj-image.right {
+    height: auto;
+    display: block;
+    text-align: center;
+  }
+  div.proj-image.right div {
+    margin: 1rem 0 0 0;
+    text-align: center;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Airbnb Cereal App Book';
+}
+
+body {
+  width: 80vw;
+  margin: auto;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 90vw;
+  }
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+}
+
+@font-face {
+  font-family: 'Airbnb Cereal App Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Airbnb Cereal App Book"), url("../fonts/AirbnbCerealBook.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Airbnb Cereal App Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Airbnb Cereal App Bold"), url("../fonts/AirbnbCerealBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Airbnb Cereal App Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Airbnb Cereal App Light"), url("../fonts/AirbnbCerealLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Airbnb Cereal App Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Airbnb Cereal App Medium"), url("../fonts/AirbnbCerealMedium.woff") format("woff");
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 14vh 0 2vh 0;
+}
+
+.heading {
+  font-family: 'Airbnb Cereal App Light';
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #616161;
+}
+
+#myPhoto {
+  width: 2.7rem;
+  border: 1px solid black;
+  border-radius: 50px;
+  margin-right: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .heading {
+    font-size: 0.7rem;
+  }
+  #myPhoto {
+    width: 2.2rem;
+  }
+}
+
+#topSection {
+  width: 70%;
+}
+
+#topSection h2 {
+  font-family: 'Airbnb Cereal App Bold';
+  font-size: 4.5rem;
+  padding-bottom: 23vh;
+}
+
+@media only screen and (max-width: 768px) {
+  #topSection {
+    width: 100%;
+  }
+  #topSection h2 {
+    font-size: 2rem;
+    padding: 2vh 0 23vh 0;
+  }
+}
+
+#aboutMeSec p {
+  width: 70%;
+  padding: 3rem 0 10rem 0;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #aboutMeSec p {
+    width: 100%;
+    padding: 2.7rem 0 7rem 0;
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+}
+
+#whatIDoSec {
+  padding-bottom: 9rem;
+}
+
+#whatIDoSec h2 {
+  padding-bottom: 3.2rem;
+}
+
+#whatIDoSec h1 {
+  font-family: 'Airbnb Cereal App Bold';
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #whatIDoSec h2 {
+    padding-bottom: 2.6rem;
+  }
+  #whatIDoSec h1 {
+    font-size: 1.5rem;
+  }
+  #whatIDoSec {
+    padding-bottom: 6rem;
+  }
+}
+
+#myWorksSec {
+  margin: 0 -10vw 0 -10vw;
+  background-color: #f0f0f0;
+}
+
+#myWorksBlock {
+  width: 83vw;
+  margin: auto;
+}
+
+#myWorksBlock h2 {
+  padding: 9.5rem 0 3rem 1.5vw;
+}
+
+.work {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 6fr 5fr;
+      grid-template-columns: 6fr 5fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.work.right {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding: 5rem 0;
+  text-align: right;
+}
+
+.work img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.work.right > a {
+  text-align: center;
+  width: auto;
+}
+
+img.mobile-screenshot {
+  height: 550px;
+  margin: auto;
+}
+
+img.mobile-screenshot.main {
+  width: auto;
+}
+
+img.shadow {
+  filter: drop-shadow(0 0 15px #222);
+  -webkit-filter: drop-shadow(0 0 15px #222);
+}
+
+#mobileBlock {
+  display: none;
+}
+
+.work > div {
+  padding: 0 5rem;
+}
+
+.work.right > div {
+  padding: 0;
+}
+
+.work > div > a {
+  text-decoration: none;
+  color: black;
+}
+
+.work > div > a:hover {
+  color: #616161;
+}
+
+.work > div h1 {
+  font-family: 'Airbnb Cereal App Bold';
+  font-size: 2.5rem;
+}
+
+#gitHubBlock {
+  text-align: right;
+  padding: 5rem 1.5rem 7rem 0;
+}
+
+#gitHubBlock a {
+  text-decoration: none;
+  color: black;
+}
+
+#gitHubBlock a:hover {
+  color: #616161;
+}
+
+@media only screen and (max-width: 768px) {
+  #myWorksSec {
+    margin: 0 -5vw 0 -5vw;
+  }
+  #myWorksBlock {
+    width: 90vw;
+  }
+  #myWorksBlock h2 {
+    padding: 6.5rem 0 2rem 3vw;
+  }
+  .work {
+    display: block;
+    text-align: center;
+  }
+  #deskBlock {
+    display: none;
+  }
+  #mobileBlock {
+    display: block;
+    margin-top: 1rem;
+  }
+  .work.right {
+    padding: 8rem 0;
+    text-align: center;
+  }
+  img.mobile-screenshot.main {
+    height: 55vh;
+  }
+  img.mobile-screenshot {
+    width: auto;
+    height: 65vh;
+    margin: auto;
+  }
+  img.shadow {
+    filter: drop-shadow(0 0 10px #222);
+    -webkit-filter: drop-shadow(0 0 10px #222);
+  }
+  .work > div {
+    padding: 0;
+  }
+  .work > div h1 {
+    font-family: 'Airbnb Cereal App Bold';
+    font-size: 1.5rem;
+  }
+  #gitHubBlock {
+    text-align: right;
+    padding: 6rem 1rem 4rem 0;
+  }
+}
+
+.heading.topSpace {
+  padding-top: 9rem;
+}
+
+.eduexp h2 {
+  font-family: 'Airbnb Cereal App Medium';
+  font-weight: 500;
+  font-size: 2.5rem;
+  padding: 2rem 0 0.8rem 0;
+}
+
+.eduexp a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: black;
+  text-decoration: none;
+}
+
+.eduexp a:hover {
+  color: #616161;
+}
+
+@media only screen and (max-width: 768px) {
+  .heading.topSpace {
+    padding-top: 7rem;
+  }
+  .eduexp h2 {
+    font-size: 1.7rem;
+  }
+}
+
+#buttonSec {
+  padding: 6rem 0 8rem 0;
+  text-align: center;
+}
+
+button {
+  background-color: black;
+  padding: 1rem 2rem;
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 8px black;
+          box-shadow: 0 0 8px black;
+  border: 1px solid black;
+}
+
+button:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-box-shadow: 0 0 0px black;
+          box-shadow: 0 0 0px black;
+}
+
+button:active {
+  -webkit-box-shadow: 0 0 15px black;
+          box-shadow: 0 0 15px black;
+}
+
+@media only screen and (max-width: 768px) {
+  #buttonSec {
+    padding: 5rem 0 6rem 0;
+    text-align: center;
+  }
+}
+
+footer #emailAdd {
+  padding: 2rem 0 2rem 0;
+}
+
+footer a {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+footer #iconsBlock {
+  padding-bottom: 10rem;
+}
+
+footer #iconsBlock > a {
+  color: black;
+  text-decoration: none;
+  padding-right: 15px;
+}
+
+footer > #iconsBlock > a:hover {
+  color: #616161;
+}
+
+@media only screen and (max-width: 768px) {
+  footer a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+  }
+}
+/*# sourceMappingURL=style.css.map */
