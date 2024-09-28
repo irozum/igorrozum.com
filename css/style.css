@@ -299,7 +299,7 @@ header {
 }
 
 #whatIDoSec {
-  padding-bottom: 9rem;
+  padding-bottom: 9.5rem;
 }
 
 #whatIDoSec h2 {
@@ -324,18 +324,13 @@ header {
   }
 }
 
-#myWorksSec {
-  margin: 0 -10vw 0 -10vw;
-  background-color: #f0f0f0;
-}
-
 #myWorksBlock {
   width: 83vw;
   margin: auto;
 }
 
 #myWorksBlock h2 {
-  padding: 9.5rem 0 3rem 1.5vw;
+  padding: 7rem 0 3rem 1.5vw;
 }
 
 .work {
@@ -407,7 +402,7 @@ img.shadow {
 
 #gitHubBlock {
   text-align: right;
-  padding: 5rem 1.5rem 7rem 0;
+  padding: 5rem 1.5rem 0 0;
 }
 
 #gitHubBlock a {
@@ -471,6 +466,16 @@ img.shadow {
 
 .heading.topSpace {
   padding-top: 9rem;
+}
+
+.eduexp {
+  margin: 0 -10vw 0 -10vw;
+  padding: 0 10vw;
+  background-color: #f0f0f0;
+}
+
+.eduexp.education {
+  padding-bottom: 7rem;
 }
 
 .eduexp h2 {
